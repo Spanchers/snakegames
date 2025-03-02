@@ -1,10 +1,18 @@
+/* Загрузка кастомного шрифта */
+@font-face {
+    font-family: 'myfont'; /* Название шрифта */
+    src: url('myfont.ttf') format('truetype'); /* Путь к шрифту */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
 }
 
 #game {
-    position: relative; /* Позволяет вложенным элементам работать с absolute */
+    position: relative; /* Для размещения текста на фоне */
     background: #353336;
     width: 100vw;
     height: 100vh;
@@ -14,16 +22,17 @@ body {
     align-items: center;
 }
 
+/* Стили для текста на фоне */
 .background-text {
-    position: absolute; /* Располагаем текст на фоне */
+    position: absolute;
     top: 50%; /* Центрируем по вертикали */
     left: 50%; /* Центрируем по горизонтали */
-    transform: translate(-50%, -50%); /* Перемещаем на точку центра */
-    font-family: 'snakegame', sans-serif; /* Применяем кастомный шрифт */
+    transform: translate(-50%, -50%); /* Перемещаем точку в центр */
+    font-family: 'myfont', sans-serif; /* Применяем кастомный шрифт */
     font-size: 60px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый цвет */
-    z-index: 0; /* Текст находится под игровыми элементами */
+    z-index: 0;
     pointer-events: none; /* Текст не будет мешать кликам */
 }
 
