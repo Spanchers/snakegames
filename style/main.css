@@ -1,7 +1,7 @@
 /* Загрузка кастомного шрифта */
 @font-face {
     font-family: 'myfonts'; /* Название шрифта */
-    src: url('myfonts.otf') format('truetype'); /* Путь к шрифту */
+    src: url('myfonts.otf') format('opentype'); /* Путь к шрифту */
     font-weight: normal;
     font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
     top: 10%; /* Подняли текст выше, теперь он будет на 10% от верхнего края */
     left: 50%; /* Центрируем по горизонтали */
     transform: translate(-50%, -50%); /* Перемещаем точку в центр */
-    font-family: 'myfont', sans-serif; /* Применяем кастомный шрифт */
+    font-family: 'myfonts', sans-serif; /* Применяем кастомный шрифт */
     font-size: 45px;
     font-weight: bold;
     color: transparent; /* Делаем текст прозрачным */
