@@ -31,7 +31,11 @@ body {
     font-family: 'myfont', sans-serif; /* Применяем кастомный шрифт */
     font-size: 45px;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.7); /* Более яркий цвет, чтобы шрифт был видим */
+    color: transparent; /* Делаем текст прозрачным */
+    background: linear-gradient(45deg, #000000, #808080, #ffffff); /* Градиентный фон */
+    background-clip: text; /* Применяем градиент только к тексту */
+    -webkit-background-clip: text; /* Для поддержки в Safari */
+    -webkit-text-fill-color: transparent; /* Делаем текст прозрачным для Safari */
     z-index: 0;
     pointer-events: none; /* Текст не будет мешать кликам */
 }
