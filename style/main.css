@@ -29,7 +29,7 @@ body {
     left: 50%; /* Центрируем по горизонтали */
     transform: translate(-50%, -50%); /* Перемещаем точку в центр */
     font-family: 'myfont', sans-serif; /* Применяем кастомный шрифт */
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.7); /* Более яркий цвет, чтобы шрифт был видим */
     z-index: 0;
